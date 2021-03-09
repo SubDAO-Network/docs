@@ -1,3 +1,9 @@
+## Setup with Docker
+Docker Image: [https://drive.google.com/drive/folders/1VRm0puMeYOj6c8hHGNlKmZZyN9D8mo-v?usp=sharing](https://drive.google.com/drive/folders/1VRm0puMeYOj6c8hHGNlKmZZyN9D8mo-v?usp=sharing)
+
+Get docker image and load with `docker load < <tarball>`
+
+## Over view of Ink! contracts
 ### SubDAO Main Module
 
 TheSubDAOMain is the base contract for SubDAO, developed by SubDAO Labs to manage the Template and Module that SubDAO supports.TheSubDAOMain needs to provide Template Library management, Module Library management, and Dao creation.
@@ -27,7 +33,7 @@ Voting with any organization is the basis for the implementation of democracy, o
 In Dao organization, Token is the symbol of rights and power, through Token can exercise the power of community governance, through Token can get the reward after contribution. In SubDAO, the SubDAO Token Module provides functions related to Token management, such as Token issuance, Token issuance, Token destruction, Token transfer, and so on. In the SubDAO Token Module, Token currently follows the ERC20 standard.
 
 
-## Contract compilation
+## Compile Contracts
 
 SubDAO provides scripts to simplify the contract compilation process while collecting the editing results into a unified directory to facilitate contract deployment and usage. Execute in the project root directory
 
@@ -39,18 +45,17 @@ bash ./build.sh
 
 All contract compilation results are saved in the release directory.
 
-## Contract deployment
+## Deploy
 
 TheSubDAO creates the substrate chain to connect the POLKADOT Ecology, and all contracts are deployed on the SubDAO chain. This section explains how to make use of PolkadotJSAppto deploycontracts.
 
-### Connect theSubDAO node
 
 Download and compile Polkadot JS Apps code, followed by yarn start startup. Access the front page http://localhost:3000/ and set the node IP and port.
 
 ![](./image-2.png)
 
 
-### Manually upload the contract
+### Deploy Contracts
 
 Enter developer-> Contracts and click Upload WASM.
 
