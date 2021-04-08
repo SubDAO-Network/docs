@@ -18,6 +18,17 @@ docker load < subdao-node-xxxxx.tar.gz
 
 to load docker image.
 
+## Start services with Docker Compose
+You can use docker compse file in docs/docker directory to start these services, subdao-node, subdao-frontend, and polkadot apps. 
+
+```
+docker-compose up -d
+```
+Check status
+```
+docker-compose ps 
+```
+
 
 
 ## Compile Contracts
@@ -35,7 +46,7 @@ All contract compilation results are saved in the release directory.
 TheSubDAO creates the substrate chain to connect the POLKADOT Ecology, and all contracts are deployed on the SubDAO chain. This section explains how to make use of PolkadotJSAppto deploycontracts.
 
 
-Download and compile Polkadot JS Apps code, followed by yarn start startup. Access the front page http://localhost:3000/ and set the node IP and port.
+Download and compile Polkadot JS Apps code(v0.71.2), followed by yarn start startup, OR using provided docker image and compose file.  Access the front page http://localhost:3001/ and set the node IP and port.
 
 ![](./image-2.png)
 
