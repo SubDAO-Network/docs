@@ -1,0 +1,39 @@
+version: "3.2"
+
+services:
+  github-proxy:
+    container_name: github-proxy
+    image: subdao-node:latest
+    ports:
+      - "8000:8000"
+    env_file:
+      - github-proxy.env
+    command: bash -c "cd /subdao-github-proxy && python app.py"
+
+
+  subdao-node:
+    container_name: subdao-node
+    image: subdao-node:latest
+    ports:
+      - "9944:9944"
+      - "9933:9933"
+      - "30333:30333"
+    command: bash -c "/subdao-node --dev --ws-external --rpc-external --rpc-methods Unsafe"
+    depends_on:
+      - github-proxy
+
+  insert-github-ocw:
+    container_name: insert-github-ocw
+    image: subdao-node:latest
+    command: bash -c "sleep 30 && /insert_github_ocw_key.sh"
+    depends_on:
+      - subdao-node
+
+  subdao-frontend:
+    container_name: subdao-frontend
+    image: subdao-node:latest
+    ports:
+      - "3001:3001"
+    command: bash -c "cd /apps && serve -p 3001 build"
+    depends_on:
+      - subdao-node
