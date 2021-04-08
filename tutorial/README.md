@@ -8,7 +8,17 @@ cargo build
 ```
 
 ## Setup with Docker
-Docker Image: [here](https://drive.google.com/drive/folders/1VRm0puMeYOj6c8hHGNlKmZZyN9D8mo-v?usp=sharing)
+Get the latest docker image from [here](https://drive.google.com/drive/folders/1VRm0puMeYOj6c8hHGNlKmZZyN9D8mo-v?usp=sharing)
+
+Run
+
+```
+docker load < subdao-node-xxxxx.tar.gz
+```
+
+to load docker image.
+
+
 
 ## Compile Contracts
 
