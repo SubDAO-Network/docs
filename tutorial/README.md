@@ -18,17 +18,25 @@ docker load < subdao-node-xxxxx.tar.gz
 
 to load docker image.
 
-## Start services with Docker Compose
-You can use docker compse file in docs/docker directory to start these services, subdao-node, subdao-frontend, and polkadot apps. 
+
+Get `docker compose` from `https://github.com/SubDAO-Network/docs`
 
 ```
+git clone https://github.com/SubDAO-Network/docs.git
+```
+
+To start these services, subdao-node, subdao-frontend, and polkadot apps. 
+
+```
+cd docs/docker
 docker-compose up -d
 ```
+
 Check status
 ```
+cd docs/docker
 docker-compose ps 
 ```
-
 
 
 ## Compile Contracts
