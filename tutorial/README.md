@@ -61,7 +61,7 @@ All contract compilation results are saved in the release directory.
 
 ## Deploy
 
-The SubDAO creates the substrate chain to connect the POLKADOT Ecology, and all contracts are deployed on the SubDAO chain. This section explains how to make use of PolkadotJSAppto deploycontracts.
+The SubDAO creates the substrate chain to connect the POLKADOT Ecology, and all contracts are deployed on the SubDAO chain. This section explains how to make use of Polkadot JS App to deploy contracts.
 
 
 Download and compile Polkadot JS Apps code(v0.71.2), followed by yarn start startup, OR using provided docker image and compose file.  Access the front page http://localhost:3001/ and set the node IP and port.
@@ -71,11 +71,11 @@ Download and compile Polkadot JS Apps code(v0.71.2), followed by yarn start star
 
 ### Deploy Contracts
 
-Enter developer-> Contracts and click Upload WASM.
+Enter `Developer-> Contracts` and click Upload WASM.
 
 ![](./image-3.png)
 
-Select the ABI and WASM files that require the deployment contract, click Upload, and Submit and Sign.
+Select the ABI and WASM files that required to deploy contract, click `Upload`, and `Submit and Sign`.
 
 ![](./image-4.png)
 
@@ -85,7 +85,7 @@ Wait a moment and the contract code will be uploaded.
 
 After you upload the contract, you can instantiate the contract on the chain. In substrate, you need to perform the contract’s initialization function, usually new or the default function.
 
-ForSubDAO contracts, all contracts are instantiated by the main contract. So the only contractSubDAO really needs to be deployed is the main contract. The main contract is responsible for managing contract templates and Dao instantiations.
+For SubDAO contracts, all contracts are instantiated by the main contract. The main contract is responsible for managing contract templates and DAO instantiations.
 
 ![](./image-5.png)
 
@@ -104,11 +104,11 @@ The main contract manages the DAO templates and DAO instantiations. After the ma
 
 ### Add templates for DAO
 
-For now, Dao templates can only be configured in the tool by calling the `addTemplate` function in the main contract, fill in the creator accountid and the code hash for each components in the template.
+For now, DAO templates can only be configured in the tool by calling the `addTemplate` function in the main contract, fill in the creator accountid and the code hash for each components in the template.
 
 For example, we create a DAO template with vault management, DAO tokens, org management, voting, and also the basic information for the template.
 
-After adding the DAO template, you can happily create the DAO  through the SubDAO frond-end. Jump to the frontend which is served at `http://localhost:3001/`.
+After adding the DAO template, you can happily create the DAO  through the `SubDAO frond-end`. Jump to the frontend which is served at `http://localhost:3001/`.
 
 ![](./image-7.png)
 
