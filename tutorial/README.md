@@ -38,6 +38,16 @@ cd docs/docker
 docker-compose ps 
 ```
 
+### Config
+
+Open http://localhost:3001/ in browser, and add the below configration in `Setting -> Developer`
+
+```
+{
+  "Address": "AccountId",
+  "LookupSource": "AccountId"
+}
+```
 
 ## Compile Contracts
 
@@ -51,7 +61,7 @@ All contract compilation results are saved in the release directory.
 
 ## Deploy
 
-TheSubDAO creates the substrate chain to connect the POLKADOT Ecology, and all contracts are deployed on the SubDAO chain. This section explains how to make use of PolkadotJSAppto deploycontracts.
+The SubDAO creates the substrate chain to connect the POLKADOT Ecology, and all contracts are deployed on the SubDAO chain. This section explains how to make use of PolkadotJSAppto deploycontracts.
 
 
 Download and compile Polkadot JS Apps code(v0.71.2), followed by yarn start startup, OR using provided docker image and compose file.  Access the front page http://localhost:3001/ and set the node IP and port.
