@@ -48,10 +48,21 @@ Open http://localhost:3001/ in browser, and add the below configration in `Setti
   "LookupSource": "AccountId"
 }
 ```
+# Setup Contracts
+SubDAO Contracts are provided in `https://github.com/SubDAO-Network/subDAO-contracts`. It's developed with ink!.
 
-## Compile Contracts
+## Get contracts
 
-SubDAO provides scripts to simplify the contract compilation process while collecting the editing results into a unified directory to facilitate contract deployment and usage. Execute in the project root directory
+```
+git clone --recursive https://github.com/SubDAO-Network/subDAO-contracts
+```
+
+## Use pre-compiled contracts
+Pre-compiled contracts are provided in `subDAO-contracts/release` folder. Please use them if you just wanna try SubDAO.
+
+## Compile contracts from source code
+
+The SubDAO provides script to simplify the contract compilation process while collecting the editing results into a unified directory to facilitate contract deployment and usage. Execute in the project root directory
 
 ```bash
 bash ./build.sh
