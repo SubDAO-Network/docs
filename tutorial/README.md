@@ -160,3 +160,4 @@ Run `yarn` to install packages needed for this App.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 # Have fun!
+Please refer [docs/usage](https://github.com/SubDAO-Network/docs/blob/main/usage/README.md) to create and manage your own DAO.
