@@ -128,5 +128,37 @@ After adding the DAO template, you can happily create the DAO  through the `SubD
 
 After you create a template, you can create your own DAO from the template that you have set up.
 
+# Setup SubDAO Front-end
 
-### Have fun!
+## Install `Polkadot JS Extension`
+Please install `Polkadot JS Extension` before you start. You can get it from here https://polkadot.js.org/extension/
+
+### Get source code
+Please get the code from `https://github.com/SubDAO-Network/subDAO-frontend`
+
+```
+git clone https://github.com/SubDAO-Network/subDAO-frontend.git
+```
+
+### Config front-end
+Please find the correct address for `main_v0.1`, and update the correct address in `public/config.js`.
+```
+window.mainAddress = {
+    main: "<MAIN CONTRACT ADDRESS>",
+    rpc_server: "<SUBDAO NODE RPC>"
+};
+```
+
+`<MAIN CONTRACT ADDRESS>` is the main contract's address after the contracts are deployed in pre steps.
+`<SUBDAO NODE RPC>` is the websocket RPC provided by SubDAO Node. If you run it locally, it should be `ws://127.0.0.1:9944` by default.
+
+### Install dependencies
+Run `yarn` to install packages needed for this App.
+
+### Start front-end
+`yarn start` runs the app in the development mode.  
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
+
+# Have fun!
