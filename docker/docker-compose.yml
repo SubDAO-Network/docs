@@ -18,12 +18,3 @@ services:
     command: bash -c "cd /apps && serve -p 3001 build"
     depends_on:
       - subdao-node
-
-  subdao-frontend:
-    container_name: subdao-frontend
-    image: subdao-node:latest
-    ports:
-      - "9856:9856"
-    command: bash -c "cd / && serve -p 9856 subdao_frontend"
-    depends_on:
-      - polkadot-frontend
