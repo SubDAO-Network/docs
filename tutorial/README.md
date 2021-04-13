@@ -48,6 +48,7 @@ Open http://localhost:3001/ in browser, and add the below configration in `Setti
   "LookupSource": "AccountId"
 }
 ```
+
 # Setup Contracts
 SubDAO Contracts are provided in `https://github.com/SubDAO-Network/subDAO-contracts`. It's developed with ink!.
 
@@ -80,7 +81,7 @@ Download and compile Polkadot JS Apps code(v0.71.2), followed by yarn start star
 ![](./image-2.png)
 
 
-### Deploy Contracts
+### Upload contracts
 
 Enter `Developer-> Contracts` and click Upload WASM.
 
@@ -92,16 +93,16 @@ Select the ABI and WASM files that required to deploy contract, click `Upload`, 
 
 Wait a moment and the contract code will be uploaded.
 
-### Deployment contract
+### Deploy contracts
 
-After you upload the contract, you can instantiate the contract on the chain. In substrate, you need to perform the contract’s initialization function, usually new or the default function.
+After you upload the contracts, you can instantiate the contract on the chain. In substrate, you need to perform the contract’s initialization function, usually new or the default function.
 
 For SubDAO contracts, all contracts are instantiated by the main contract. The main contract is responsible for managing contract templates and DAO instantiations.
 
 ![](./image-5.png)
 
 
-Select the initialization function call, fill in the initialization parameters, set the main contract administrator, and set the contract initial balance, click Deploy. Note that the deployment salt is used.
+Select the initialization function call, fill in the initialization parameters, set the main contract administrator, and set the contract initial balance, click `Deploy` before set a proper endornment number, normally 500 is enough. Note that the deployment salt is used.
 
 
 ## Initialization
@@ -142,6 +143,7 @@ git clone https://github.com/SubDAO-Network/subDAO-frontend.git
 
 ### Config front-end
 Please find the correct address for `main_v0.1`, and update the correct address in `public/config.js`.
+
 ```
 window.mainAddress = {
     main: "<MAIN CONTRACT ADDRESS>",
