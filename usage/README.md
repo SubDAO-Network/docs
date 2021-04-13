@@ -1,5 +1,6 @@
 Please make sure you already have installed the wallet[https://polkadot.js.org/extension/](https://polkadot.js.org/extension/?fileGuid=6prdjVCwTYv6cpRX) and created your account.
 
+**Please make sure you have enough unit in your account before you start!**
 
 ## Home page
 
