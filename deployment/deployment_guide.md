@@ -6,41 +6,45 @@ SubDAOis a DAO platform based on WEB3 ecology, which can quickly create your own
 
 SubDAO’s contract address:[https://github.com/SubDAO-Network/subDAO-contracts](https://github.com/SubDAO-Network/subDAO-contracts)
 
-### SubDAO Main Module
+### Main Module
 
 SubDAOMain is the base contract for SubDAO, developed by SubDAO Labs to manage the Template and Module that SubDAO supports. SubDAOMain'sfeaturesincludeTemplate Library management, Module Library management, and Dao creation.
 
-### SubDAO Template Module
+### Template Module
 
 AllDAOsare created from Template, and all supported modules are recorded in Template. The Template functionality includes the creation of theDAO, the creation process for defining the DAO, and the supported Module functionality.
 
-### SubDAO Base Module
+### Base Module
 
 The basic information of the DAO is managedbyBase Module, which contains the name,logo, organization description, and creator of the DAO organization.
 
-### SubDAO Org Module
+### Org Module
 
 There are different forms of organization for any organization, but there must be its founders, its managers, and its participants. The SubDAOOrg Module provides a flexible way to distinguish between membership and the responsibilities of Dao community governance. The current version includesthe identity division and responsibility setting of different members in a minimal way, and the membership is divided into three identities: creator, manager and participant.
 
-### SubDAO Vault Module
+### Vault Module
 
 The operation of the DAO organization needsfinancial support, mainly for the DAO members to contribute togetrewards. The management of money needs to be done in a democratic way. Not everyone can manage money, only the founders and managers, or by voting. The money in the Vault comes from outside donations, and Native tokens and ERC20 tokens can be supported depending on the settings.
 
-### SubDAO Voting Module
+### Voting Module
 
 Voting with any organization is the basis for the implementation of democracy, only with the Voting capacity and mechanisms to constitute a DAO. In SubDAO Voting Module provides Voting-related functions, allowing any member that can initiate Voting to initiate Voting and set Voting rules. All members can vote using Token.
 
-### SubDAO Token Module
+### Token/ERC20 Module
 
 In DAOorganization, Token is the symbol of rights and power, through Token can exercise the power of community governance, through Token can get the reward after contribution. In SubDAO, the SubDAO Token Module provides functions related to Token management, such as Token issuance, Tokenminting, Token destruction, Token transfer, and so on. In the SubDAO Token Module, Token currently follows the ERC20 standard.
 
-### SubDAO Auth Module
+### Auth Module
 
 The main function of Auth Module is to provide a flexible permission management, which can give different permissions to each address, such as creating votes and participating in voting.
 
-### SubDAO DAO Manage Module
+### DAO Manager Module
 
 DAO Manager is mainly used to manage the contract addresses owned in DAO.
+
+### RedPocket Module
+
+RedPocket Module is used to distribute/airdrop tokens to users, currently it's only used by extension.
 
 ## Contract compilation
 
