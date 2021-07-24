@@ -4,7 +4,7 @@ Please make sure you already have installed the wallet[https://polkadot.js.org/e
 
 ## Home page
 
-The SubDAO home page is [http://localhost:3000/](http://localhost:3000/), or the url where you deploy it.
+The SubDAO home page is [https://app.subdao.org/](https://app.subdao.org/), or the url where you deploy it.
 
 ![](./usage-01.png)
 
@@ -16,33 +16,31 @@ First Click the `Connect Wallet` button to Connect to your Wallet and select you
 
 ## Show the DAO list
 
-You can see the home page with all DAOs listed, the top right corner is your account information, the middle is all the created DAOs, you can switch through the arrows on both sides, you can also click on the middle of the DAO Access View.
+You can seeall your created DAOs at the bottom of the page, your account information is at the top right corner, you can see DAO details by clicking the logo of a DAO.
+
+There are multiple parts in a DAO page, such as Balance, Moderators, Contracts and so on.
 
 ![](./usage-03.png)
 
-On the left is the DAO profile, and on the right is the DAO module information, such as balance, administrator, module contract address, module entry, and so on.
-
-![](./usage-04.png)
-
 ## Create Your Own DAO
 
-Click the `Create My DAO` button on the home page to start creating your First DAO.
+Click the `Create A DAO` button at top nav bar to start creating your first DAO.
+
+The first step is to set up basic information, fill in your DAO Logo URL on the left and name and description on the right. See the image below.
 
 ![](./usage-05.png)
 
-The first step is to set up the DAO basic information, fill in your DAO thumbnail URL on the left and Dao name and description on the right. Take the image below.
 
-![](./usage-06.png)
-
-The second step is to select The DAO template, where you can select `The Last ONE` and display what DAO modules The template has.
+The second step is to select The DAO template, the first one is chosen by default.
 
 ![](./usage-07.png)
 
-The first box sets the administrator of the DAO, the second box sets the native Token information of the Dao and the initial total, and the third box sets the amount of money to be pre-transferred to each account when the Dao is created.
+
+The third step is to setup token.
 
 ![](./usage-08.png)
 
-The fourth step is mainly signing to create DAO, sign confirm box will be pop up many times in this step.  Please wait for the signature on the chain, and it will be fine. If you want to avoid repeatedly entering the password, please just check `Remember my password for the next 15 minutes` in sign confirm box.
+Click `Submit` button then signing to create DAO, sign confirm box will be pop up many times in this step.  Please wait for the transaction finalized on the chain, and it will be fine. If you want to avoid repeatedly entering the password, please just check `Remember my password for the next 15 minutes` in sign confirm box.
 
 ![](./usage-09.png)
 
@@ -52,27 +50,39 @@ Finally your DAO will be created, the following figure shows the result of creat
 
 ## View Your DAO
 
-Go directly to the Admin DAO page by clicking `Manage` on the home page or once you’ve created it. You can see the current DAO information, balance, administrator, contract address, and module entry.
+You can see the current DAO information, Balance, Moderators, Contracts, and so on.
 
 ![](./usage-11.png)
 
-
 ## Manag DAO members
 
-In the DAO Page, click the `Org` button to access organization management.
-
-![](./usage-12.png)
+In the DAO Page, click the `ORG` button to access organization management.
 
 You can see all the current members.
 
 ![](./usage-13.png)
 
-Click the `Manage` button to enter the management page, you can see the moderators and members of the Dao can be added and deleted information.
+Click the `Manage` button to enter the management page, you can see the moderators and members of the DAO can be added and deleted information.
 
 ![](./usage-14.png)
 
 Adding an moderator and a member initiates a transaction, after which of course the DAO’s moderator can have permission to operate.
 
+As a owner, you can set whether to allow outside people to join the DAO as a member publicly, it's now allowed by default.
+
+![](./usage-14-1.png)
+
+If it's now allowed to join publicly, user needs to apply for the joining.
+
+![](./usage-14-2.png)
+
+Owner can check the `Applicant List` and make the approvement.
+
+![](./usage-14-3.png)
+
+Owner can transfer ownership to a new owner. Member can exit a DAO.
+
+![](./usage-14-4.png)
 
 ## Manage Vault assets
 
@@ -80,44 +90,64 @@ On the DAO page, click `Vault` to access the assets management page.
 
 ![](./usage-15.png)
 
-Vault allows members to deposit and withdraw funds, and the Vault’s balance and transaction history can be seen on the right.
+Vault allows members to deposit directly, and withdraw funds by voting. Vault’s balance and transaction history are open to all.
 
 ![](./usage-16.png)
 
-On the deposits page, you can choose your own account to deposit a certain amount of money, and click `Request` to deposit assets.
+On the deposits page, you can choose your own account to deposit a certain amount of token, and click `Request` to deposit assets.
 
 ![](./usage-17.png)
 
-In the withdraw page is the same, you can choose your own account, then choose to receive the account, and then fill in the funds, click `Request` to withdraw their own funds.
 
-![](./usage-18.png)
+Then you can see the Vault’s financial history in the Vault.
 
-So you can see the Vault’s financial history in the Vault.
-
-![](./usage-19.png)
+![](./usage-16.png)
 
 ## Manage the vote
 
 Click the `Voting` button in the DAO page to go to the Voting page.
 
-![](./usage-20.png)
-
 You can create a New vote by clicking the `New Voting` button.
 
 ![](./usage-21.png)
 
-In the create vote page, enter the vote duration first, adding more than one option to the ballot can be done by filling in the second ballot name, the third ballot with a minimum number of valid ballots, the fourth ballot with a minimum number of required votes, the fifth ballot with a description of the vote, and the remaining ballot options, for example, there is an option to create a `Yes` or `No` vote. Click the `create` button to initiate the transaction.
+Enter `End Time` and `Title`.
 
-![](./usage-22.png)
+![](./usage-22-1.png)
 
-In the vote page, select a vote to go to view.
+Enter `Minimum support require numbers` and `Minimum voter require numbers`.
+
+![](./usage-22-2.png)
+
+Enter `Description`.
+
+![](./usage-22-3.png)
+
+Enter `Options` you want users to choose later.
+
+![](./usage-22-4.png)
+
+If need to transfer token after the voting pass, fill this form.
+
+![](./usage-22-5.png)
+
+
+Click `Create` button, then sign, the voting will be created and showed on the `Voting` page.
 
 ![](./usage-23.png)
 
-Now You can vote in the voting details
+Now You can vote.
 
 ![](./usage-24.png)
 
-If the voting threshold is reached, the voting can be closed.
+If the voting gets passed and reaches the end time, the voting can be trigger to do the transferring.
 
 ![](./usage-25.png)
+
+Transferring is successfully.
+
+![](./usage-27.png)
+
+The voting is finished.
+
+![](./usage-28.png)
