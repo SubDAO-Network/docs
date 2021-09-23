@@ -2,7 +2,7 @@
 
 ## Build from source
 ```
-git clone --recursive https://github.com/SubDAO-Network/subdao-node.git
+git clone --recursive -b 3.0_dev https://github.com/SubDAO-Network/subdao-node.git
 cd subdao-node
 cargo build
 ```
@@ -55,7 +55,7 @@ SubDAO Contracts are provided in `https://github.com/SubDAO-Network/subDAO-contr
 ## Get contracts
 
 ```
-git clone --recursive https://github.com/SubDAO-Network/subDAO-contracts
+git clone --recursive -b 3.0_dev https://github.com/SubDAO-Network/subDAO-contracts
 ```
 
 ## Use pre-compiled contracts
@@ -138,7 +138,7 @@ Please install `Polkadot JS Extension` before you start. You can get it from her
 Please get the code from `https://github.com/SubDAO-Network/subDAO-frontend`
 
 ```
-git clone https://github.com/SubDAO-Network/subDAO-frontend.git
+git clone -b dev-2.0 https://github.com/SubDAO-Network/subDAO-frontend.git
 ```
 
 ### Config front-end
